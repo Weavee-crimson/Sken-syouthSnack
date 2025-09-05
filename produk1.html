@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk 1 - Sken'syouth Snack</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fffaf0, #ffe5b4);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* biar footer selalu di bawah */
+  }
+
+  header {
+    background: linear-gradient(90deg, #ff8c00, #ffa500);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  header img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffe5b4;
+    border-bottom: 2px solid #fff;
+  }
+
+  main {
+    flex: 1; /* isi ruang kosong agar footer turun */
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .produk {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .produk:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .produk img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .produk img:hover {
+    transform: scale(1.05);
+  }
+
+  main img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  footer {
+    background: linear-gradient(90deg, #ff8c00, #ffa500);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <img src="logo.png" height="200" width="200">
+    <h1>Sken'syouth Snack</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Corndog Asin (Isi Sosis)</h2>
+    <img src="produk1.jpg" alt="Produk 1">
+    <p>Corndog asin isi sosis adalah camilan yang lezat dan gurih, terdiri dari sosis yang dibungkus dengan lapisan corndog yang renyah dan gurih. Dengan tekstur yang crispy di luar dan lembut di dalam, corndog asin kami pasti akan menjadi favorit Anda. Cocok untuk disantap sebagai camilan atau hidangan ringan</p>
+    <p>Harga/pcs : Rp.3000</p>
+    <p>Harga Bundling : Rp.5000</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sken'syouth Snack. All rights reserved.</p>
+  </footer>
+</body>
+</html>
